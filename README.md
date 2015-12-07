@@ -29,7 +29,7 @@ run container
 docker run --name ledis -d -e "LEDIS_PATH=/var/data/ledis" -v /var/data/ledis:/var/data/ledis -p 80:5000 ledis:1.0
 ```
 
-run git-sync (see [.bash_history](.bash_history) on how to build git-sync image locally)
+run git-sync (see [.bash_history](.bash_history#L41) on how to build git-sync image locally)
 ```bash
 docker run -d -e "GIT_SYNC_REPO=https://github.com/khanhicetea/flask-skeleton.git" -e "GIT_SYNC_DEST=/git" -v /var/opt/ledis:/git --name=git-sync git-sync
 ```
